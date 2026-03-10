@@ -1,0 +1,15 @@
+{
+	"name": "Metalledwith",
+	"description": "Wordpress website with a custom theme and photography",
+	"project": "Metalledwith Website",
+	"client": "Richelle Dourte",
+	"categories":["design", "development", "photography"],
+	"url": "http://www.metalledwith.com",
+	"images": [
+    "/projects/metalledwith/slide1.jpg",
+		"/projects/metalledwith/slide2.jpg",
+		"/projects/metalledwith/slide3.jpg",
+		"/projects/metalledwith/necklace.jpg",
+		"/projects/metalledwith/earrings.jpg"
+    ]
+}

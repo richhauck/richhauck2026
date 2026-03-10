@@ -1,0 +1,112 @@
+{
+    "projects":[
+        {
+            "id": "slamcorp",
+            "imageUrl": "/projects/slamcorp/thumb.webp",
+            "name": "Slam Corp",
+            "client": "Slam Corp",
+            "categories":["design", "development"]
+        },
+        {
+            "id": "eb5extell",
+            "imageUrl": "/projects/eb5extell/thumb.webp",
+            "name": "EB5 Extell",
+            "client": "Concept Creative Studio",
+            "categories":["development"]
+        },
+        {
+            "id": "dandzmedia",
+            "imageUrl": "/projects/dandzmedia/thumb.webp",
+            "name": "D and Z Media Acquisition",
+            "client": "D and Z Media Acquisition",
+            "categories":["design", "development"]
+        },
+        {
+            "id": "harvest",
+            "imageUrl": "/projects/harvest/thumb.webp",
+            "name": "Harvest Homeschool",
+            "client": "Harvest Homeschool Academy",
+            "categories":["design","development", "branding"]
+        },
+        {
+            "id": "anderson-elder-law",
+            "imageUrl": "/projects/anderson-elder-law/thumb.webp",
+            "name": "Anderson Elder Law",
+            "client": "Anderson Elder Law",
+            "categories":["design", "development"]
+          },
+        {
+            "id": "paintedskyproperties",
+            "imageUrl": "/projects/paintedskyproperties/thumb.webp",
+            "name": "Painted Sky Properties",
+            "client": "Painted Sky Properties",
+            "categories":["design","development", "branding"]
+        },
+        {
+            "id": "reiki-by-rickie",
+            "imageUrl": "/projects/reiki-by-rickie/thumb.webp",
+            "name": "Reiki by Rickie Website",
+            "client": "Reiki by Rickie",
+            "categories":["design", "development"]
+        },
+        {
+            "id": "desserts-etc",
+            "imageUrl": "/projects/desserts-etc/thumb.webp",
+            "name": "Desserts, Etc.",
+            "client": "Desserts, Etc.",
+            "categories":["design", "development", "photography"]
+        },
+        {
+            "id": "torchbearer-sauces",
+            "imageUrl": "/projects/torchbearer-sauces/thumb.webp",
+            "name": "TorchBearer Sauces",
+            "client": "TorchBearer Sauces, LLC",
+            "categories":["branding", "photography", "illustration"]
+        },
+        {
+            "id": "roost-architecture",
+            "imageUrl": "/projects/roost-architecture/thumb.webp",
+            "name": "Roost Architecture",
+            "client": "Roost Architecture",
+            "categories":["branding", "design", "development", "photography"]
+        },
+        {
+            "id": "metalledwith",
+            "imageUrl": "/projects/metalledwith/thumb.webp",
+            "name": "Metalledwith",
+            "client": "Metalledwith",
+            "categories":["design", "development", "photography"]
+        },
+        {
+            "id": "manada",
+            "imageUrl": "/projects/manada/thumb.webp",
+            "name": "Manada Conservancy",
+            "client": "Manada Conservancy",
+            "categories":["branding", "design", "development"],
+            "featured":"true"
+        },
+        {
+            "id": "remission-2",
+            "imageUrl": "/projects/remission-2/thumb.webp",
+            "name": "Re-Mission 2",
+            "client": "HopeLab",
+            "categories":["design", "development"]
+        },
+        {
+            "id": "harrisburg-beer-week",
+            "imageUrl": "/projects/harrisburg-beer-week/thumb.webp",
+            "name": "Harrisburg Beer Week",
+              "client": "Harrisburg Beer Week",
+              "categories":["design", "development"],
+            "featured":"true"
+          },
+        {
+            "id": "dcba",
+            "imageUrl": "/projects/dcba/thumb.webp",
+            "name": "DCBA Lawyers for the Arts",
+            "client": "Dauphin County Bar Association",
+            "categories":["branding"]
+        }
+        ]
+        
+}

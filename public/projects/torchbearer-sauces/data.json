@@ -1,0 +1,13 @@
+{
+	"name": "TorchBearer Sauces",
+	"description": "HII has provided illustration, photography, website design, development, and print design services to this all-natural condiment maker. The TorchBearer website features a shopping cart and custom illustrations to complement the bottle labels (nearly all of which were illustrated by HII).",
+	"project": "TorchBearer Sauces Branding",
+	"client": "TorchBearer Sauces, LLC",
+	"categories":["identity", "photography", "illustration"],
+	"images": [
+		"/projects/torchbearer-sauces/bottles.jpg",
+		"/projects/torchbearer-sauces/ohmygarlic.png",
+		"/projects/torchbearer-sauces/psycho-curry.png",
+		"/projects/torchbearer-sauces/the-rapture.png"
+    ]
+}

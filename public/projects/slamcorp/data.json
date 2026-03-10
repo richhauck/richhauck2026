@@ -1,0 +1,14 @@
+{
+	"name": "Slam Corp",
+	"description": "Website design and development for Alex Rodriguez's SPAC in collaboration with Prosek Partners.",
+	"project": "Slam Corp Website",
+	"client": "Prosek Partners",
+	"categories":["design", "development"],
+	"url": "https://www.slamcorp.com",
+	"images": [
+    	"/projects/slamcorp/home.jpg",
+		"/projects/slamcorp/about.jpg",
+		"/projects/slamcorp/strategy.jpg",
+		"/projects/slamcorp/sec-filings.jpg"
+    ]
+}

@@ -1,0 +1,15 @@
+{
+	"name": "D and Z Media Site",
+	"description": "Under HII, I created D and Z Media Acquisition branding and a website in advance of this SPAC's IPO at the NYSE.",
+	"project": "D and Z Media Site and Branding",
+	"client": "D and Z Media Acquisition, Inc.",
+	"categories":["design", "development", "branding"],
+	"url": "https://www.dandzmedia.com",
+	"images": [
+    	"/projects/dandzmedia/logo.png",
+        "/projects/dandzmedia/home.jpg",
+		"/projects/dandzmedia/about.jpg",
+		"/projects/dandzmedia/leadership.jpg",
+        "/projects/dandzmedia/nyse.jpg"
+    ]
+}

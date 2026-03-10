@@ -1,0 +1,13 @@
+{
+	"name": "Re-Mission 2",
+	"description": "Website promoting a game that invites you to join the fight against cancer.",
+	"project": "Re-Mission 2 Game Website",
+	"client": "HopeLab",
+	"categories":["design", "development"],
+	"url": "http://www.remission2.org",
+	"images": [
+    "/projects/remission-2/slide1.jpg",
+		"/projects/remission-2/slide2.jpg",
+		"/projects/remission-2/slide3.jpg"
+    ]
+}

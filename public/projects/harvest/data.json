@@ -1,0 +1,15 @@
+{
+	"name": "Harvest Homeschool Academy",
+	"description": "Logo, branding materials, website design and development, and other promotional materials for this Central Pennsylvania-based Scholé group",
+	"project": "Website and Logo",
+	"client": "Harvest Homeschool Academy",
+	"categories":["design", "development, illustration"],
+	"url": "http://www.harvesthomeschool.com",
+	"images": [
+		"/projects/harvest/logo.jpg",
+		"/projects/harvest/join.jpg",
+		"/projects/harvest/academics.jpg",
+		"/projects/harvest/homepage.jpg",
+		"/projects/harvest/harvest-bag.webp"
+    ]
+}

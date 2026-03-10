@@ -1,0 +1,13 @@
+{
+	"name": "Anderson Elder Law",
+	"description": "For over 12 years, My company's provided website design and technology consulting to this elder law attorney based out of Media, PA.",
+	"project": "Anderson Elder La Website",
+	"client": "Anderson Elder Law",
+	"categories":["design", "development"],
+	"url": "http://www.andersonelderlaw.com",
+	"images": [
+    "/projects/anderson-elder-law/slide1.jpg",
+		"/projects/anderson-elder-law/slide2.jpg",
+		"/projects/anderson-elder-law/slide3.jpg"
+    ]
+}

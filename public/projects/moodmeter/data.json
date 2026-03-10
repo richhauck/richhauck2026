@@ -1,0 +1,12 @@
+{
+	"name": "Mood Meter App",
+	"description": "HII developed this promotional site for Mood Meter, a mobile app that promotes the gift of self awarness.",
+	"project":"Mood Meter App Website",
+	"client": "HopeLab",
+	"categories":["design", "development"],
+	"url": "http://www.moodmeterapp.com",
+	"images": [
+     "/projects/moodmeter/homepage.jpg",
+		"/projects/moodmeter/team.jpg"
+    ]
+}

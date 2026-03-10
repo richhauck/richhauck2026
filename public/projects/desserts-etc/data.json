@@ -1,0 +1,14 @@
+{
+  "name": "Desserts, Etc.",
+	"description": "Custom photography, website design, and a custom Woocommerce-driven site were all part of the services HII rendered for this Hershey bakery.",
+	"project": "Desserts, Etc. Website",
+	"client": "Hershey Pantry",
+  "url": "http://www.dessertsetc.com",
+	"categories":["design", "development", "photography"],
+	"images": [
+    "/projects/desserts-etc/interior.jpg",
+    "/projects/desserts-etc/slide1.jpg",
+		"/projects/desserts-etc/slide2.jpg",
+		"/projects/desserts-etc/slide3.jpg"
+    ]
+}

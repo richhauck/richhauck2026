@@ -1,0 +1,15 @@
+{
+	"name": "Manada Conservancy",
+	"description": "Under HII, I created a modernized logo that paid homage to the previous design (based on a white oak tree), as well as designed and build an accompanying website that is clean more clearly articulates the conservancy's goals and offerings.",
+	"project": "Manada Logo and Website",
+	"client": "Manada Conservancy",
+	"categories":["identity", "design", "development"],
+	"url": "http://www.manada.org",
+	"images": [
+    "/projects/manada/manada1.jpg",
+		"/projects/manada/manada2.jpg",
+		"/projects/manada/manada3.jpg",
+		"/projects/manada/manada4.jpg",
+		"/projects/manada/manada5.jpg"
+    ]
+}

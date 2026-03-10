@@ -1,0 +1,185 @@
+[
+{
+    "id": "harvest-homeschool",
+    "imageUrl": "projects/harvest-homeschool/thumb.jpg",
+    "name": "Harvest Homeschool Academy",
+    "client": "Harvest Homeschool Academy",
+    "categories":["identity", "design", "development"]
+},
+{
+    "id": "eb5extell",
+    "imageUrl": "/projects/eb5extell/thumb.jpg",
+    "name": "EB5 Extell",
+    "client": "Concept Creative Studio",
+    "categories":["development"]
+},
+{
+  "id": "harrisburg-beer-week",
+  "imageUrl": "/projects/harrisburg-beer-week/thumb.jpg",
+  "name": "Harrisburg Beer Week",
+	"client": "Harrisburg Beer Week",
+	"categories":["design", "development"],
+  "featured":"true"
+},
+{
+  "id": "trinity-golf-trips",
+  "imageUrl": "/projects/trinity-golf-trips/thumb.jpg",
+  "name": "Trinity Golf Trips",
+	"client": "Trinity Golf Trips",
+	"categories":["design", "development"],
+  "featured":"true"
+},
+{
+    "id": "gkvisual",
+    "imageUrl": "/projects/gkvisual/thumb.png",
+    "name": "GK Visual",
+    "client": "GK Visual",
+    "categories":["design", "development"],
+    "featured":"true"
+},
+{
+    "id": "pantrycafe",
+    "imageUrl": "/projects/pantrycafe/thumb.jpg",
+    "name": "The Pantry Café",
+    "client": "The Hershey Pantry Group",
+    "categories":["photography", "design", "development"]
+},
+{
+    "id": "manada",
+    "imageUrl": "/projects/manada/thumb.png",
+    "name": "Manada Conservancy",
+    "client": "Manada Conservancy",
+    "categories":["identity", "design", "development"],
+    "featured":"true"
+},
+{
+    "id": "zeroday-brewing",
+    "imageUrl": "/projects/zeroday-brewing/thumb.jpg",
+    "name": "ZerØday Brewing",
+    "client": "ZerØday Brewing Company",
+    "categories":["design", "development"],
+    "featured":"true"
+},
+{
+    "id": "theburg",
+    "imageUrl": "/projects/theburg/thumb.jpg",
+    "name": "The Burg News",
+    "client": "The Burg News",
+    "categories":["illustration"]
+},
+{
+    "id": "hershey-pantry",
+    "imageUrl": "/projects/hershey-pantry/thumb.jpg",
+    "name": "The Hershey Pantry",
+    "client": "Hershey Pantry",
+    "categories":["design", "development", "photography"]
+},
+{
+    "id": "sinvin",
+    "imageUrl": "/projects/sinvin/thumb.png",
+    "name": "Sinvin Real Estate",
+    "client": "Sinvin Real Estate",
+    "categories":["design", "development"]
+},
+{
+    "id": "roost-architecture",
+    "imageUrl": "/projects/roost-architecture/thumb.jpg",
+    "name": "Roost Architecture",
+    "client": "Roost Architecture",
+    "categories":["identity", "design", "development", "photography"]
+},
+{
+    "id": "lassen-advisors",
+    "imageUrl": "/projects/lassen-advisors/thumb.png",
+    "name": "Lassen Advisors",
+    "client": "Lassen Advisors, LLC",
+    "categories":["identity", "design", "development"],
+    "featured":"true"
+},
+{
+    "id": "sara-bozich",
+    "imageUrl": "/projects/sara-bozich/thumb.jpg",
+    "name": "Sara Bozich",
+    "client": "Sara Bozich",
+    "categories":["design", "development"],
+    "featured":"true"
+},
+{
+    "id": "torchbearer-sauces",
+    "imageUrl": "/projects/torchbearer-sauces/thumb.jpg",
+    "name": "TorchBearer Sauces",
+    "client": "TorchBearer Sauces, LLC",
+    "categories":["identity", "photography", "illustration"]
+},
+{
+    "id": "metalledwith",
+    "imageUrl": "/projects/metalledwith/thumb.jpg",
+    "name": "Metalledwith",
+    "client": "Metalledwith",
+    "categories":["design", "development", "photography"]
+},
+{
+    "id": "jbare",
+    "imageUrl": "/projects/jbare/thumb.jpg",
+    "name": "JBA Real Estate",
+    "client": "JBA Real Estate",
+    "categories":["design", "development"],
+    "featured":"true"
+},
+{
+  "id": "img-precision",
+  "imageUrl": "/projects/img-precision/thumb.jpg",
+  "name": "IMG",
+	"client": "IMG",
+	"categories":["design", "development"]
+},
+{
+    "id": "remission-2",
+    "imageUrl": "/projects/remission-2/thumb.jpg",
+    "name": "Re-Mission 2",
+    "client": "HopeLab",
+    "categories":["design", "development"]
+},
+{
+    "id": "dcba",
+    "imageUrl": "/projects/dcba/thumb.png",
+    "name": "DCBA Lawyers for the Arts",
+    "client": "Dauphin County Bar Association",
+    "categories":["identity"]
+},
+{
+    "id": "laura-medine",
+    "imageUrl": "/projects/laura-medine/thumb.jpg",
+    "name": "Laura Medine",
+    "client": "Laura Medine",
+    "categories":["design", "development"]
+},
+{
+  "id": "anderson-elder-law",
+  "imageUrl": "/projects/anderson-elder-law/thumb.jpg",
+  "name": "Anderson Elder Law",
+	"client": "Anderson Elder Law",
+	"categories":["design", "development"]
+},
+{
+    "id": "concours-at-carlisle",
+    "imageUrl": "/projects/concours-at-carlisle/thumb.jpg",
+    "name": "Concours at Carlisle",
+    "client": "Uncommong Marketing Works",
+    "categories":["design", "development"]
+},
+{
+    "id": "moodmeter",
+    "imageUrl": "/projects/moodmeter/thumb.jpg",
+    "name": "Mood Meter App",
+    "client": "HopeLab",
+    "categories":["design", "development"]
+},
+{
+  "id": "desserts-etc",
+  "imageUrl": "/projects/desserts-etc/thumb.jpg",
+  "name": "Desserts, Etc.",
+	"client": "Desserts, Etc.",
+	"categories":["design", "development", "photography"]
+}
+]

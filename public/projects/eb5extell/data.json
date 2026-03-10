@@ -1,0 +1,14 @@
+{
+	"name": "EB5 Extell",
+	"description": "Website development and consulting with Concept Creative Studio to create this investor program website. This multilingual site includes a user management system and utilizes a variety of JavaScript animations.",
+	"project":"EB5 Extell Website",
+	"client": "Concept Creative Studio",
+	"categories":["development"],
+	"url": "http://www.eb5extell.com",
+	"images": [
+	 "/projects/eb5extell/home.jpg",
+	 "/projects/eb5extell/eb5-program.jpg",
+	 "/projects/eb5extell/projects.jpg",
+	 "/projects/eb5extell/regional-center.jpg"
+    ]
+}

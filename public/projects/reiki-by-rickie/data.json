@@ -1,0 +1,15 @@
+{
+	"name": "Reiki by Rickie Website",
+	"description": "HII provided design, development, and photography services for this website promoting Rickie Freedman, a Reiki Master and certified holistic wellness coach.",
+	"project": "Reiki by Ricki Website",
+	"client": "Reiki by Ricki",
+	"categories":["photography", "design", "development"],
+	"url": "http://www.reikibyrickie.com",
+	"images": [
+    "/projects/reiki-by-rickie/homepage.webp",
+		"/projects/reiki-by-rickie/why-reiki.webp",
+		"/projects/reiki-by-rickie/picture2.webp",
+		"/projects/reiki-by-rickie/picture.webp"
+		
+    ]
+}

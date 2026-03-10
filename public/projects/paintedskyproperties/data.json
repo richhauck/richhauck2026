@@ -1,0 +1,14 @@
+{
+	"name": "Painted Sky Properties",
+	"description": "HII supplied design, development, and rebranding assistance for this real estate investment organization.",
+	"project": "Painted Sky Properties Website and branding",
+	"client": "Painted Sky Properties",
+	"categories":["design", "development"],
+	"url": "https://www.paintedskyproperties.com",
+	"images": [
+		"/projects/paintedskyproperties/logo.png",
+		"/projects/paintedskyproperties/home.jpg",
+		"/projects/paintedskyproperties/investment.jpg",
+		"/projects/paintedskyproperties/selling.jpg"
+    ]
+}

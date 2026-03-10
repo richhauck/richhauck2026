@@ -1,0 +1,14 @@
+{
+	"name": "Harrisburg Beer Week",
+	"description": "My company was a media sponsor for this annual beer week which sponsored Harrisburg River Rescue. I created a site design that allowed vendors to register and publish events.",
+	"project": "Harrisburg Beer Week Website",
+	"client": "Harrisburg Beer Week",
+	"categories":["design", "development"],
+	"url": "http://harrisburgbeerweek.com",
+	"images": [
+		"/projects/harrisburg-beer-week/homepage.jpg",
+		"/projects/harrisburg-beer-week/about.jpg",
+		"/projects/harrisburg-beer-week/calendar.jpg",
+		"/projects/harrisburg-beer-week/sponsors.jpg"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+	"name": "Roost Architecture",
+	"description": "HII developed a clean portfolio that emphasizes the projects for this residential architect based out of Boiling Springs, PA.",
+	"project": "Roost Architecture Website",
+	"client": "Roost Architecture",
+	"categories":["design", "development"],
+	"url": "http://www.roostarchitecture.com",
+	"images": [
+    "/projects/roost-architecture/slide1.jpg",
+		"/projects/roost-architecture/slide2.jpg",
+		"/projects/roost-architecture/slide3.jpg"
+    ]
+}

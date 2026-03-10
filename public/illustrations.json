@@ -1,0 +1,33 @@
+{
+    "illustrations": [
+        
+        {"id":"june2022cover", "src":"images/illustrations/june2022cover.webp", "width": "80", "title":"June 2022 Cover", "caption": "The Burg Magazine. Adobe Fresco on iPad"},
+        {"id":"ohmygarlic", "src":"images/illustrations/ohmygarlic_6x3_5.webp", "width": "400", "title":"Oh My Garlic", "caption": "TorchBearer Sauces label. Adobe Photoshop and Adobe Illustrator"},
+        {"id":"Nov2020_2", "src":"images/illustrations/Nov2020_2.webp", "width": "500", "title":"November 2020", "caption": "Illustration for The Burg Magazine. Procreate"},
+        {"id":"postcards", "src":"images/illustrations/postcards-final.webp", "width": "600", "title":"Postcards", "caption": "Illustration for The Burg Magazine. Photoshop"},
+        {"id":"pouredinpa", "src":"images/illustrations/pouredinpa-poster.webp", "width": "180", "title":"Poured In PA", "caption": "Poster for film documentary. Photoshop"},
+        {"id":"september", "src":"images/illustrations/september.webp", "width": "400", "title":"September", "caption": "Illustration for The Burg Magazine. Procreate"},
+        {"id":"june2019", "src":"images/illustrations/june2019.webp", "width": "400", "title":"June 2019", "caption": "Illustration for The Burg Magazine. Photoshop"},
+        {"id":"March_2019", "src":"images/illustrations/March_2019.webp", "width": "400", "title":"March 2019", "caption": "Illustration for The Burg Magazine. Procreate"},
+        {"id":"March_2021", "src":"images/illustrations/March_2021.webp", "width": "400", "title":"March 2021", "caption": "Illustration for The Burg Magazine. Procreate"},
+        {"id":"march2017", "src":"images/illustrations/march2017.webp", "width": "220", "title":"March 2017", "caption": "Illustration for The Burg Magazine. Photoshop"},
+        {"id":"gangsta", "src":"images/illustrations/gangsta-wide-b.webp", "width": "1000", "title":"Lyrical Gangster", "caption": "Beer Label for ZerØday Brewing. Photoshop"},
+        {"id":"skyline2", "src":"images/illustrations/skyline2.webp", "width": "400", "title":"Harrisburg Skyline", "caption": "Illustration for The Burg Magazine. Photoshop"},
+        {"id":"november", "src":"images/illustrations/november.webp", "width": "170", "title":"November", "caption": "Illustration for The Burg Magazine. Photoshop"},
+        {"id":"nov2020", "src":"images/illustrations/nov2020.webp", "width": "400", "title":"November 2020", "caption": "Illustration for The Burg Magazine. Procreate"},
+        {"id":"october2017", "src":"images/illustrations/october2017.webp", "width": "250", "title":"October 2017", "caption": "Illustration for The Burg Magazine. Photoshop"},
+        {"id":"october2016", "src":"images/illustrations/october2016.webp", "width": "250", "title":"October 2016", "caption": "Illustration for The Burg Magazine. Procreate"},
+        {"id":"october2019", "src":"images/illustrations/October2019.webp", "width": "400", "title":"October 2019", "caption": "Illustration for The Burg Magazine. Adobe Fresco"},
+        {"id":"feb-2016", "src":"images/illustrations/feb-2016.webp", "width": "120", "title":"February 2016", "caption": "Illustration for The Burg Magazine. Procreate"},
+        {"id":"feb2019", "src":"images/illustrations/feb2019.webp", "width": "600", "title":"February 2019", "caption": "Illustration for The Burg Magazine. Procreate"},
+        {"id":"july", "src":"images/illustrations/july.webp", "width": "400", "title":"July", "caption": "Illustration for The Burg Magazine. Photoshop"},
+        {"id":"july2016b", "src":"images/illustrations/july2016b.webp", "width": "450", "title":"July 2016", "caption": "Illustration for The Burg Magazine. Photoshop"},
+        {"id":"coffeebbq", "src":"images/illustrations/coffeebbq.webp", "width": "450", "title":"TorchBearer Sauces Coffee BBQ Label", "caption": "Illustration for The Burg Magazine. Adobe Photoshop and Adobe Illustrator"},
+        {"id":"december-2019", "src":"images/illustrations/December-2019.webp", "width": "200", "title":"December 2019", "caption":  "Cover for The Burg Magazine. Procreate, Adobe Fresco, Adobe Photoshop"},
+        {"id":"december-2016", "src":"images/illustrations/december2016.webp", "width": "400", "title":"December 2016", "caption": "Illustration for The Burg Magazine. Procreate"},
+        {"id":"april2016", "src":"images/illustrations/april2016.webp", "width": "400", "title":"April 2016", "caption": "Illustration for The Burg Magazine. Procreate"},
+        {"id":"vegetables", "src":"images/illustrations/vegetables-1200.webp", "width": "200", "title":"Food Festival", "caption": "Illustration for food festival. Photoshop"},
+        {"id":"april2017", "src":"images/illustrations/april2017.webp", "width": "400", "title":"April 2017", "caption": "Illustration for The Burg Magazine. Procreate"},
+        {"id":"jetermeter", "src":"images/illustrations/jeter-meter.webp", "width": "400", "title":"Jeter Meter", "caption": "T-Shirt design for Turn 2 and NYRR Foundation, Adobe Illustrator"}
+    ]
+}
