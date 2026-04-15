@@ -31,8 +31,8 @@ export default function Header() {
           </Link>
         </grid-col>
         <grid-col span="8">
-          <nav id="main-nav">
-            <div style={{ position: "relative" }}>
+          <nav id="primary-nav">
+            <div className="inner">
               <ul>
                 <li>
                   <Link
