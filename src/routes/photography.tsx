@@ -3,8 +3,8 @@ import { SITE_TITLE } from "../constants";
 import usePhotosStore from "#/stores/usePhotosStore";
 import { usePhotos } from "#/hooks/usePhotos";
 import { useEffect } from "react";
-import type { Photo } from "#/types/photo";
-import PhotoThumb from "../components/PhotoThumb";
+import type { Photo } from "#/types/mediaItem";
+import MediaThumb from "../components/MediaThumb";
 import LightGallery from "lightgallery/react";
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
@@ -45,9 +45,8 @@ function RouteComponent() {
     return <div>Error loading photos</div>;
   }
   return (
-    <div>
+    <section id="photos">
       <title>{`Photography - ${SITE_TITLE}`}</title>
-      <h1>Photography</h1>
       <LightGallery
         licenseKey={VITE_LIGHTGALLERY_LICENSE_KEY}
         speed={500}
@@ -55,9 +54,9 @@ function RouteComponent() {
         selector=".thumb"
       >
         {photos.map((photo: Photo) => (
-          <PhotoThumb key={photo.id} props={photo} />
+          <MediaThumb key={photo.id} props={photo} />
         ))}
       </LightGallery>
-    </div>
+    </section>
   );
 }

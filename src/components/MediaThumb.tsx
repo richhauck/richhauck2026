@@ -1,17 +1,28 @@
-import type { Photo } from "#/types/photo";
-import { useState } from "react";
+import useMobileStore from "#/stores/useMobileStore";
+import type { MediaItem } from "#/types/mediaItem";
+import { useEffect, useState, type FC } from "react";
 
-interface PhotoThumbProps {
-  props: Photo;
+interface MediaThumbProps {
+  props: MediaItem;
 }
 
-const PhotoThumb: FC<PhotoThumbProps> = ({ props }) => {
+const MediaThumb: FC<MediaThumbProps> = ({ props }) => {
   const initialWidth = props.width ? `${props.width}px` : "450px";
   const [thumbWidth, setThumbWidth] = useState(initialWidth);
+  const { isMobile } = useMobileStore();
   const permalink = props.title
     .toLowerCase()
     .replace(/ /g, "-")
     .replace(/[^\w-]+/g, "");
+
+  useEffect(() => {
+    if (isMobile) {
+      setThumbWidth("100%");
+    } else {
+      setThumbWidth(initialWidth);
+    }
+  }, [initialWidth]);
+
   return (
     <a
       className="thumb"
@@ -33,4 +44,4 @@ const PhotoThumb: FC<PhotoThumbProps> = ({ props }) => {
   );
 };
 
-export default PhotoThumb;
+export default MediaThumb;

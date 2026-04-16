@@ -32,7 +32,7 @@ export default function Header() {
         </grid-col>
         <grid-col span="8">
           <nav id="primary-nav">
-            <div className="inner">
+            <div id="inner">
               <ul>
                 <li>
                   <Link

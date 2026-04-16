@@ -1,4 +1,6 @@
-export interface Photo {
+export interface MediaItem {
+  src: string | undefined;
+  caption: any;
   id: number;
   title: string;
   url: string;

@@ -1,4 +1,4 @@
-import type { Photo } from "#/types/photo";
+import type { Photo } from "#/types/mediaItem";
 import { create } from "zustand";
 import { devtools } from "zustand/middleware";
 interface usePhotosStore {
