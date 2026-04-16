@@ -9,17 +9,13 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as PortfolioRouteImport } from './routes/portfolio'
 import { Route as PhotographyRouteImport } from './routes/photography'
 import { Route as IllustrationRouteImport } from './routes/illustration'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as PortfolioIndexRouteImport } from './routes/portfolio.index'
+import { Route as PortfolioProjectIdRouteImport } from './routes/portfolio.$projectId'
 
-const PortfolioRoute = PortfolioRouteImport.update({
-  id: '/portfolio',
-  path: '/portfolio',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const PhotographyRoute = PhotographyRouteImport.update({
   id: '/photography',
   path: '/photography',
@@ -40,20 +36,32 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PortfolioIndexRoute = PortfolioIndexRouteImport.update({
+  id: '/portfolio/',
+  path: '/portfolio/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PortfolioProjectIdRoute = PortfolioProjectIdRouteImport.update({
+  id: '/portfolio/$projectId',
+  path: '/portfolio/$projectId',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/illustration': typeof IllustrationRoute
   '/photography': typeof PhotographyRoute
-  '/portfolio': typeof PortfolioRoute
+  '/portfolio/$projectId': typeof PortfolioProjectIdRoute
+  '/portfolio/': typeof PortfolioIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/illustration': typeof IllustrationRoute
   '/photography': typeof PhotographyRoute
-  '/portfolio': typeof PortfolioRoute
+  '/portfolio/$projectId': typeof PortfolioProjectIdRoute
+  '/portfolio': typeof PortfolioIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -61,20 +69,34 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/illustration': typeof IllustrationRoute
   '/photography': typeof PhotographyRoute
-  '/portfolio': typeof PortfolioRoute
+  '/portfolio/$projectId': typeof PortfolioProjectIdRoute
+  '/portfolio/': typeof PortfolioIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/illustration' | '/photography' | '/portfolio'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/illustration'
+    | '/photography'
+    | '/portfolio/$projectId'
+    | '/portfolio/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/illustration' | '/photography' | '/portfolio'
+  to:
+    | '/'
+    | '/about'
+    | '/illustration'
+    | '/photography'
+    | '/portfolio/$projectId'
+    | '/portfolio'
   id:
     | '__root__'
     | '/'
     | '/about'
     | '/illustration'
     | '/photography'
-    | '/portfolio'
+    | '/portfolio/$projectId'
+    | '/portfolio/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -82,18 +104,12 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   IllustrationRoute: typeof IllustrationRoute
   PhotographyRoute: typeof PhotographyRoute
-  PortfolioRoute: typeof PortfolioRoute
+  PortfolioProjectIdRoute: typeof PortfolioProjectIdRoute
+  PortfolioIndexRoute: typeof PortfolioIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/portfolio': {
-      id: '/portfolio'
-      path: '/portfolio'
-      fullPath: '/portfolio'
-      preLoaderRoute: typeof PortfolioRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/photography': {
       id: '/photography'
       path: '/photography'
@@ -122,6 +138,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/portfolio/': {
+      id: '/portfolio/'
+      path: '/portfolio'
+      fullPath: '/portfolio/'
+      preLoaderRoute: typeof PortfolioIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/portfolio/$projectId': {
+      id: '/portfolio/$projectId'
+      path: '/portfolio/$projectId'
+      fullPath: '/portfolio/$projectId'
+      preLoaderRoute: typeof PortfolioProjectIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -130,7 +160,8 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   IllustrationRoute: IllustrationRoute,
   PhotographyRoute: PhotographyRoute,
-  PortfolioRoute: PortfolioRoute,
+  PortfolioProjectIdRoute: PortfolioProjectIdRoute,
+  PortfolioIndexRoute: PortfolioIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

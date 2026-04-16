@@ -7,7 +7,7 @@ import type { Project } from "#/types/project";
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
 
-export const Route = createFileRoute("/portfolio")({
+export const Route = createFileRoute("/portfolio/")({
   component: RouteComponent,
 });
 
@@ -29,11 +29,11 @@ function RouteComponent() {
   }, [data]);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <div>Loading Project...</div>;
   }
 
   if (error) {
-    return <div>Error loading photos</div>;
+    return <div>Error loading portfolio</div>;
   }
   return (
     <section id="portfolio">

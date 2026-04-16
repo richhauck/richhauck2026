@@ -10,12 +10,12 @@ export default function Footer() {
           <ul id="social-links">
             <li>
               <a href="https://www.linkedin.com/in/richhauck/" target="_blank">
-                <img src="images/linkedin.svg" alt="LinkedIn" />
+                <img src="/images/linkedin.svg" alt="LinkedIn" />
               </a>
             </li>
             <li>
               <a href="https://dribbble.com/richhauck">
-                <img src="images/dribbble.svg" alt="Dribbble" />
+                <img src="/images/dribbble.svg" alt="Dribbble" />
               </a>
             </li>
           </ul>
