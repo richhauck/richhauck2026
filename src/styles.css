@@ -9,6 +9,9 @@
   --color-text: #fff;
   --black: #000;
 }
+* {
+  transition: all 0.3s ease-out;
+}
 body {
   font-family: "Lato", sans-serif;
   margin: 0;
@@ -24,6 +27,13 @@ body {
   z-index: -2;
 }
 h1 {
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+figure {
   margin: 0;
 }
 #main-header {
@@ -58,7 +68,8 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  div {
+  #inner {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -71,7 +82,6 @@ h1 {
     margin: 0;
   }
   a {
-    transition: all 0.3s ease-out;
     &:hover {
       color: var(--color-accent);
     }
@@ -95,20 +105,23 @@ a:visited {
 #highlight {
   transition: all 0.4s ease-out;
   background-color: var(--color-primary);
-  height: 4px;
-  width: 100px;
+
   left: 0;
+
+  height: 0.25rem;
+  margin-top: 0.5rem;
+  width: 1.25rem;
   position: absolute;
 }
 body #highlight {
   width: 0;
   left: 0;
 }
-body#info #highlight {
+body#about #highlight {
   width: 42px;
   left: 48px;
 }
-body#work #highlight {
+body#portfolio #highlight {
   width: 55px;
   left: 141px;
 }
@@ -149,6 +162,18 @@ body#photos #highlight {
 .lg-backdrop {
   background-color: rgba(0, 0, 0, 0.7) !important;
 }
+/*** Portfolio ***/
+#work a {
+  transition: all 0.5s ease-out;
+}
+#work-thumbs:hover a {
+  /*filter: blur(4px);*/
+  opacity: 0.2;
+}
+#work-thumbs a:hover {
+  filter: blur(0);
+  opacity: 1;
+}
 
 /* FOOTER */
 #social-links {
@@ -185,6 +210,7 @@ body#photos #highlight {
     overflow: hidden;
   }
   #inner {
+    position: relative;
     overflow: hidden;
   }
   #nav-toggle {
