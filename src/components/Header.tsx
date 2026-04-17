@@ -1,8 +1,10 @@
-import { Link } from "@tanstack/react-router";
-import { useState } from "react";
+import useMobileStore from "#/stores/useMobileStore";
+import { Link, useRouterState } from "@tanstack/react-router";
+import { useEffect, useState } from "react";
 
 export default function Header() {
   const [isActive, setIsActive] = useState("");
+  const { location } = useRouterState();
   /**
    * Toggles class on body
    */
@@ -11,7 +13,33 @@ export default function Header() {
     setIsActive(activeState);
     document.body.classList.toggle("nav-open");
   };
+  const { setIsMobile } = useMobileStore();
 
+  // Set body id based on current path for page-specific styling
+  useEffect(() => {
+    const pName = location.pathname.substring(1, location.pathname.length);
+    const bodyId = pName === "" ? "home" : pName;
+    document.body.setAttribute("id", bodyId);
+  }, [location.pathname]);
+
+  // Handle mobile nav state on window resize
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setIsMobile(false);
+        if (document.body.classList.contains("nav-open")) {
+          document.body.classList.remove("nav-open");
+        }
+      } else {
+        setIsMobile(true);
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, [setIsMobile]);
   return (
     <header id="main-header">
       <button

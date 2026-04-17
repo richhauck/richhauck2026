@@ -12,7 +12,9 @@ declare module "react/jsx-runtime" {
       "grid-container": DetailedHTMLProps<GridContainerAttributes, HTMLElement>;
       "grid-row": DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>;
       "grid-col": DetailedHTMLProps<GridColAttributes, HTMLElement>;
-    }
+      "flex-container": DetailedHTMLProps<GridContainerAttributes, HTMLElement>;
+      "flex-row": DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>;
+      "flex-col": DetailedHTMLProps<GridColAttributes, HTMLElement>;
   }
 }
 

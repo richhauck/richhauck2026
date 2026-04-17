@@ -45,54 +45,70 @@ function RouteComponent() {
   return (
     <section id="project">
       <title>{`${projectData.name} - ${SITE_TITLE}`}</title>
-      <article>
-        <header>
-          <h1>{projectData.name}</h1>
-          <p className="subtitle">{projectData.description}</p>
-        </header>
+      <grid-container size="md" style={{ margin: "0 auto" }}>
+        <article>
+          <header style={{ marginBottom: "1rem" }}>
+            <h1>{projectData.name}</h1>
+          </header>
 
-        <div className="project-meta">
-          <div className="meta-item">
-            <h3>Project</h3>
-            <p>{projectData.project}</p>
+          <div className="box">
+            <grid-container size="lg">
+              <grid-row>
+                <grid-col span="6">
+                  <p>{projectData.description}</p>
+                </grid-col>
+                <grid-col span="6">
+                  <table className="project-meta-table">
+                    <tbody>
+                      <tr>
+                        <th>Project</th>
+                        <td>{projectData.project}</td>
+                      </tr>
+                      <tr>
+                        <th>Client</th>
+                        <td>{projectData.client}</td>
+                      </tr>
+                      {projectData.categories && (
+                        <tr>
+                          <th>Categories</th>
+                          <td>{projectData.categories.join(", ")}</td>
+                        </tr>
+                      )}
+                      {projectData.url && (
+                        <tr>
+                          <th>Website</th>
+                          <td>
+                            <a
+                              href={projectData.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              {projectData.url}
+                            </a>
+                          </td>
+                        </tr>
+                      )}
+                    </tbody>
+                  </table>
+                </grid-col>
+              </grid-row>
+            </grid-container>
           </div>
-          <div className="meta-item">
-            <h3>Client</h3>
-            <p>{projectData.client}</p>
-          </div>
-          {projectData.categories && (
-            <div className="meta-item">
-              <h3>Categories</h3>
-              <p>{projectData.categories.join(", ")}</p>
+
+          {projectData.images && (
+            <div className="project-images">
+              {projectData.images.map((image: string, index: number) => (
+                <figure key={index}>
+                  <img
+                    src={image}
+                    alt={`${projectData.name} - Image ${index + 1}`}
+                  />
+                </figure>
+              ))}
             </div>
           )}
-          {projectData.url && (
-            <div className="meta-item">
-              <h3>Website</h3>
-              <a
-                href={projectData.url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {projectData.url}
-              </a>
-            </div>
-          )}
-        </div>
-
-        {projectData.images && (
-          <div className="project-images">
-            {projectData.images.map((image: string, index: number) => (
-              <figure key={index}>
-                <img
-                  src={image}
-                  alt={`${projectData.name} - Image ${index + 1}`}
-                />
-              </figure>
-            ))}
-          </div>
-        )}
-      </article>
+        </article>
+      </grid-container>
     </section>
   );
 }

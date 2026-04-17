@@ -34,7 +34,14 @@ img {
   height: auto;
 }
 figure {
-  margin: 0;
+  margin: 0 0 0.5rem;
+
+  h3 {
+    margin: 0.25rem 0 0rem;
+  }
+  span {
+    color: #bbb;
+  }
 }
 #main-header {
   text-transform: uppercase;
@@ -56,6 +63,8 @@ figure {
 }
 #content {
   min-height: 20rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 .box {
   background-color: rgba(0, 0, 0, 0.6);
@@ -83,7 +92,7 @@ figure {
   }
   a {
     &:hover {
-      color: var(--color-accent);
+      color: var(--color-primary);
     }
   }
 }
@@ -105,33 +114,30 @@ a:visited {
 #highlight {
   transition: all 0.4s ease-out;
   background-color: var(--color-primary);
-
-  left: 0;
-
-  height: 0.25rem;
-  margin-top: 0.5rem;
+  height: 0.1rem;
+  margin-top: 1.5rem;
   width: 1.25rem;
   position: absolute;
 }
 body #highlight {
   width: 0;
-  left: 0;
+  right: 0;
 }
 body#about #highlight {
-  width: 42px;
-  left: 48px;
+  width: 54px;
+  right: 462px;
 }
 body#portfolio #highlight {
-  width: 55px;
-  left: 141px;
+  width: 87px;
+  right: 325px;
 }
 body#illustration #highlight {
-  width: 124px;
-  left: 247px;
+  width: 108px;
+  right: 166px;
 }
-body#photos #highlight {
-  width: 72px;
-  left: 422px;
+body#photography #highlight {
+  width: 117px;
+  right: 0;
 }
 .text-left {
   text-align: left;
@@ -173,6 +179,12 @@ body#photos #highlight {
 #work-thumbs a:hover {
   filter: blur(0);
   opacity: 1;
+}
+.project-meta-table {
+  td,
+  td {
+    text-align: left;
+  }
 }
 
 /* FOOTER */

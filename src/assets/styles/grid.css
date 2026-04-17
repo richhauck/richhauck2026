@@ -24,7 +24,7 @@ grid-container[size="md"] {
   max-width: 960px;
 }
 grid-container[size="lg"] {
-  max-width: 1600px;
+  max-width: 1400px;
 }
 
 /* ========================= Grid Row ========================= */

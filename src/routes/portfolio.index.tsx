@@ -38,7 +38,6 @@ function RouteComponent() {
   return (
     <section id="portfolio">
       <title>{`Portfolio - ${SITE_TITLE}`}</title>
-      <h1>Portfolio</h1>
       <div
         style={{
           minHeight: "100vh",

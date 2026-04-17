@@ -11,8 +11,8 @@ const WorkThumb: FC<MediaThumbProps> = ({ props }) => {
       <figure>
         <img src={props.imageUrl} alt={props.name} />
         <figcaption>
-          <h3 className="block">{props.name}</h3>
-          <span>{props.categories.toString()}</span>
+          <h3>{props.name}</h3>
+          <span>{props.categories.join(", ")}</span>
         </figcaption>
       </figure>
     </a>
