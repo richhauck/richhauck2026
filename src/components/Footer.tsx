@@ -13,11 +13,6 @@ export default function Footer() {
                 <img src="/images/linkedin.svg" alt="LinkedIn" />
               </a>
             </li>
-            <li>
-              <a href="https://dribbble.com/richhauck">
-                <img src="/images/dribbble.svg" alt="Dribbble" />
-              </a>
-            </li>
           </ul>
         </grid-col>
         <grid-col span="6" className="text-right">

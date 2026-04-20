@@ -4,9 +4,10 @@ import { useEffect, useState, type FC } from "react";
 
 interface MediaThumbProps {
   props: MediaItem;
+  index?: number;
 }
 
-const MediaThumb: FC<MediaThumbProps> = ({ props }) => {
+const MediaThumb: FC<MediaThumbProps> = ({ props, index = 0 }) => {
   const initialWidth = props.width ? `${props.width}px` : "450px";
   const [thumbWidth, setThumbWidth] = useState(initialWidth);
   const { isMobile } = useMobileStore();
@@ -31,6 +32,8 @@ const MediaThumb: FC<MediaThumbProps> = ({ props }) => {
       data-slide-name={permalink}
       data-sub-html={`<h3>${props.title}</h3><p>${props.caption}</p>`}
       style={{
+        animation: `fadeInUp 0.5s ease-out both`,
+        animationDelay: `${index * 0.2}s`,
         backgroundSize: "cover",
         backgroundImage: `url(${props.src})`,
         backgroundPosition: "center",

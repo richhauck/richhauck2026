@@ -58,8 +58,8 @@ function RouteComponent() {
             gap: "0.5rem",
           }}
         >
-          {projects.map((project: Project) => (
-            <WorkThumb key={project.id} props={project} />
+          {projects.map((project: Project, index: number) => (
+            <WorkThumb key={project.id} props={project} index={index} />
           ))}
         </div>
       </div>

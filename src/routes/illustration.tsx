@@ -45,7 +45,7 @@ function RouteComponent() {
     return <div>Error loading illustrations</div>;
   }
   return (
-    <section id="illustrations">
+    <section id="illustration">
       <title>{`Illustration - ${SITE_TITLE}`}</title>
       <LightGallery
         licenseKey={VITE_LIGHTGALLERY_LICENSE_KEY}
@@ -53,8 +53,8 @@ function RouteComponent() {
         download={false}
         selector=".thumb"
       >
-        {illustrations.map((illustration: MediaItem) => (
-          <MediaThumb key={illustration.id} props={illustration} />
+        {illustrations.map((illustration: MediaItem, index: number) => (
+          <MediaThumb key={illustration.id} props={illustration} index={index} />
         ))}
       </LightGallery>
     </section>

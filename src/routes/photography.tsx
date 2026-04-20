@@ -3,7 +3,7 @@ import { SITE_TITLE } from "../constants";
 import usePhotosStore from "#/stores/usePhotosStore";
 import { usePhotos } from "#/hooks/usePhotos";
 import { useEffect } from "react";
-import type { Photo } from "#/types/mediaItem";
+import type { MediaItem } from "#/types/mediaItem";
 import MediaThumb from "../components/MediaThumb";
 import LightGallery from "lightgallery/react";
 import "lightgallery/css/lightgallery.css";
@@ -32,7 +32,7 @@ function RouteComponent() {
       "photos" in data &&
       Array.isArray(data.photos)
     ) {
-      const photosData: Photo[] = data.photos as Photo[];
+      const photosData: MediaItem[] = data.photos as MediaItem[];
       setPhotos(photosData);
     }
   }, [data]);
@@ -53,8 +53,8 @@ function RouteComponent() {
         download={false}
         selector=".thumb"
       >
-        {photos.map((photo: Photo) => (
-          <MediaThumb key={photo.id} props={photo} />
+        {photos.map((photo: MediaItem, index: number) => (
+          <MediaThumb key={photo.id} props={photo} index={index} />
         ))}
       </LightGallery>
     </section>
