@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useEffect, useState } from "react";
 import { SITE_TITLE } from "../constants";
 
 export const Route = createFileRoute("/about")({
@@ -6,13 +7,27 @@ export const Route = createFileRoute("/about")({
 });
 
 function About() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const id = requestAnimationFrame(() => setVisible(true));
+    return () => cancelAnimationFrame(id);
+  }, []);
+
   return (
     <section id="about">
       <title>{`About - ${SITE_TITLE}`}</title>
-      <grid-container size="lg" style={{ margin: "0 auto" }}>
-        <grid-row>
-          <grid-col span="8">
-            <div className="box">
+      <grid-container size="lg" style={{ margin: "0 auto", padding: "0" }}>
+        <grid-row style={{ alignItems: "stretch" }}>
+          <grid-col span="8" style={{ display: "flex" }}>
+            <div
+              className="box about-fade"
+              style={{
+                opacity: visible ? 1 : 0,
+                transform: visible ? "translateY(0)" : "translateY(1rem)",
+                transitionDelay: "0.3s",
+              }}
+            >
               <p>
                 I've always been fascinated with the intersection of design and
                 technology, starting from my college days working in Macromedia
@@ -30,8 +45,19 @@ function About() {
               </p>
             </div>
           </grid-col>
-          <grid-col span="4">
-            <img src="images/rich-hauck.webp" alt="Rich Hauck" />
+          <grid-col span="4" style={{ display: "flex" }}>
+            <img
+              src="images/rich-hauck.webp"
+              alt="Rich Hauck"
+              className="about-fade border"
+              style={{
+                width: "100%",
+                objectFit: "cover",
+                opacity: visible ? 1 : 0,
+                transform: visible ? "translateY(0)" : "translateY(1rem)",
+                transitionDelay: "0.7s",
+              }}
+            />
           </grid-col>
         </grid-row>
       </grid-container>

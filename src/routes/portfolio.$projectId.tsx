@@ -4,6 +4,8 @@ import { useProject } from "#/hooks/useProjects";
 import useProjectsStore from "#/stores/useProjectsStore";
 import { SITE_TITLE } from "#/constants";
 import type { ProjectData } from "#/types/project";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export const Route = createFileRoute("/portfolio/$projectId")({
   component: RouteComponent,
@@ -30,6 +32,36 @@ function RouteComponent() {
     }
   }, [projectDataById]);
 
+  useEffect(() => {
+    if (!projectData) return;
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    const targets = gsap.utils.toArray<Element>("#project-meta, figure");
+    targets.forEach((el) => {
+      gsap.fromTo(
+        el,
+        { opacity: 0, y: 30 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.6,
+          delay: 0.5,
+          scrollTrigger: {
+            trigger: el,
+
+            start: "top 50%",
+            once: true,
+          },
+        },
+      );
+    });
+
+    return () => {
+      ScrollTrigger.getAll().forEach((t) => t.kill());
+    };
+  }, [projectData]);
+
   if (isLoading) {
     return <div>Loading project...</div>;
   }
@@ -47,18 +79,15 @@ function RouteComponent() {
       <title>{`${projectData.name} - ${SITE_TITLE}`}</title>
       <grid-container size="md" style={{ margin: "0 auto" }}>
         <article>
-          <header style={{ marginBottom: "1rem" }}>
-            <h1>{projectData.name}</h1>
-          </header>
-
-          <div className="box">
+          <div id="project-meta" className="box">
             <grid-container size="lg">
               <grid-row>
-                <grid-col span="6">
+                <grid-col span="7">
+                  <h1>{projectData.name}</h1>
                   <p>{projectData.description}</p>
                 </grid-col>
-                <grid-col span="6">
-                  <table className="project-meta-table">
+                <grid-col span="5">
+                  <table>
                     <tbody>
                       <tr>
                         <th>Project</th>
@@ -96,7 +125,7 @@ function RouteComponent() {
           </div>
 
           {projectData.images && (
-            <div className="project-images">
+            <div id="project-images">
               {projectData.images.map((image: string, index: number) => (
                 <figure key={index}>
                   <img
