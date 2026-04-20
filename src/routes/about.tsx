@@ -9,12 +9,10 @@ function About() {
   return (
     <section id="about">
       <title>{`About - ${SITE_TITLE}`}</title>
-
-      <grid-container size="lg">
+      <grid-container size="lg" style={{ margin: "0 auto" }}>
         <grid-row>
-          <grid-col span="6">
+          <grid-col span="8">
             <div className="box">
-              <h1>About</h1>
               <p>
                 I've always been fascinated with the intersection of design and
                 technology, starting from my college days working in Macromedia
@@ -32,7 +30,7 @@ function About() {
               </p>
             </div>
           </grid-col>
-          <grid-col span="6">
+          <grid-col span="4">
             <img src="images/rich-hauck.webp" alt="Rich Hauck" />
           </grid-col>
         </grid-row>

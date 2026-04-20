@@ -61,6 +61,29 @@ figure {
     color: var(--color-primary);
   }
 }
+#logo span:first-child {
+  background-image: linear-gradient(to left, #ff5858 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: 100%;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+#logo span:nth-child(2) {
+  background-image: linear-gradient(to left, #fff 50%, #ff5858 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+#logo:hover span {
+  background-position: 0;
+}
 #content {
   min-height: 20rem;
   font-size: 1.2rem;
@@ -194,6 +217,14 @@ body#photography #highlight {
   list-style: none;
   display: flex;
   gap: 1rem;
+
+  a {
+    opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 #social-links img {
   height: 44px;

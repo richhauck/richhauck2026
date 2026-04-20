@@ -55,7 +55,8 @@ export default function Header() {
       <grid-row>
         <grid-col span="4">
           <Link to="/" id="logo">
-            <span>Rich</span>Hauck
+            <span>Rich</span>
+            <span>Hauck</span>
           </Link>
         </grid-col>
         <grid-col span="8">
