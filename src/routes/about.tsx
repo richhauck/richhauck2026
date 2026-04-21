@@ -28,11 +28,12 @@ function About() {
                 transitionDelay: "0.3s",
               }}
             >
+              <h1>About Me</h1>
               <p>
                 I started my career as a web designer completing interface
                 designs, illustration work, and simple web-based games and
                 screensavers. I was attracted to programming in the early 2000s
-                through Flash/ActionScript and programmatic art in
+                through Flash/ActionScript and programmatic art in{" "}
                 <a href="https://processing.org/" target="_blank">
                   Processing
                 </a>
@@ -47,10 +48,10 @@ function About() {
               </p>
 
               <p>
-                Prior to that, I operated through
+                Prior to that, I operated through{" "}
                 <a href="https://www.hauckinteractive.com">
                   Hauck Interactive, Inc.
-                </a>
+                </a>{" "}
                 helping small and medium businesses with design. I still work
                 under this for the occasional small project, as well as for
                 award-winning illustrations with{" "}

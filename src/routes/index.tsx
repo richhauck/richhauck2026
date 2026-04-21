@@ -32,7 +32,35 @@ function App() {
 
   return (
     <section>
-      <grid-container
+      <div id="intro">
+        <div style={{ textAlign: "center" }}>
+          <img
+            src="images/rich-hauck.avif"
+            alt="Rich Hauck"
+            style={{ borderRadius: "50%", maxWidth: "25rem", margin: "0 auto" }}
+          />
+        </div>
+        <div id="intro-text">
+          <div>
+            <h1 style={{ fontSize: "300%", lineHeight: "100%" }}>
+              Hi! I'm a{" "}
+              <div id="animated-roles" ref={rolesRef}>
+                <span>designer.</span>
+                <span>developer.</span>
+                <span>photographer.</span>
+                <span>teacher.</span>
+              </div>
+            </h1>
+            <p>
+              I've enjoyed wearing a few hats in a career that's spanned over
+              over 25 years. My work has taken me from agency work, to Wall
+              Street, and then to consulting, all while keeping a foot in the
+              classroom to give back. <Link to="/about">More...</Link>
+            </p>
+          </div>
+        </div>
+      </div>
+      {/*<grid-container
         style={{
           maxWidth: "1200px",
           minHeight: "400px",
@@ -74,7 +102,7 @@ function App() {
             </div>
           </grid-col>
         </grid-row>
-      </grid-container>
+      </grid-container>*/}
     </section>
   );
 }

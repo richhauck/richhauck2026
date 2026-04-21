@@ -13,6 +13,8 @@ const WorkThumb: FC<MediaThumbProps> = ({ props, index = 0 }) => {
       style={{
         animation: `fadeInUp 0.5s ease-out both`,
         animationDelay: `${index * 0.2}s`,
+        color: `var(--color-text)`,
+        textDecoration: "none",
       }}
     >
       <figure>

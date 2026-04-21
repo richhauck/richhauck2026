@@ -80,7 +80,7 @@ function RouteComponent() {
       <grid-container size="md" style={{ margin: "0 auto" }}>
         <article>
           <div id="project-meta" className="box">
-            <grid-container size="lg">
+            <grid-container size="lg" style={{ padding: 0 }}>
               <grid-row>
                 <grid-col span="7">
                   <h1>{projectData.name}</h1>
@@ -103,7 +103,7 @@ function RouteComponent() {
                           <td>{projectData.categories.join(", ")}</td>
                         </tr>
                       )}
-                      {projectData.url && (
+                      {/*projectData.url && (
                         <tr>
                           <th>Website</th>
                           <td>
@@ -116,7 +116,7 @@ function RouteComponent() {
                             </a>
                           </td>
                         </tr>
-                      )}
+                      )*/}
                     </tbody>
                   </table>
                 </grid-col>

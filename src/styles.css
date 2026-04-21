@@ -4,7 +4,7 @@
 :root {
   --color-primary: #f00;
   --color-secondary: #333;
-  --color-accent: #007acc;
+  --color-accent: #47aff5;
   --color-background: #fff;
   --color-text: #fff;
   --black: #000;
@@ -59,8 +59,15 @@ figure {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   background: linear-gradient(180deg, var(--black), transparent);
+  display: flex;
+  flex-direction: column;
+}
+#top-gradient > grid-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 #logo {
   font-size: 2rem;
@@ -97,9 +104,14 @@ figure {
   background-position: 0;
 }
 #content {
+  flex: 1;
   min-height: 20rem;
   font-size: 1.2rem;
   line-height: 2rem;
+
+  h1 {
+    line-height: 2.5rem;
+  }
 }
 img.border {
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -163,7 +175,6 @@ img.border {
 
     &:hover {
       background-position: 0 0;
-      /*color: var(--color-primary);*/
     }
   }
 }
@@ -175,8 +186,8 @@ img.border {
   z-index: 1000;
 }
 #main-footer {
-  margin-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
+  width: 100%;
   font-size: 0.8rem;
 }
 a:link,
@@ -229,16 +240,36 @@ body#photography #highlight {
   }
 }
 
+/* INTRO */
 #intro {
+  margin: 0 auto;
+  max-width: 1100px;
+  gap: 3rem;
+  display: flex;
+}
+
+#intro-text {
+  display: flex;
+  align-items: center;
+}
+
+section {
+  min-height: 650px;
+  display: flex;
+  align-items: center;
   a {
     color: var(--color-accent);
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
 /* LightGallery */
 .lg-react-element:hover a {
   filter: brightness(0.2);
-  opacity: 0.8;
+  opacity: 0.4;
 }
 .lg-react-element a {
   transition: all 0.5s ease-out;
@@ -250,7 +281,7 @@ body#photography #highlight {
 .lg-react-element {
   display: flex;
   flex-wrap: wrap;
-  gap: 3px;
+  gap: 10px;
 }
 .lg-on main {
   filter: blur(10px);
@@ -258,16 +289,19 @@ body#photography #highlight {
 .lg-backdrop {
   background-color: rgba(0, 0, 0, 0.7) !important;
 }
+.lg-outer h3 {
+  margin: 0;
+}
 /*** Portfolio ***/
 #work a {
   transition: all 0.5s ease-out;
 }
 #work-thumbs:hover a {
-  /*filter: blur(4px);*/
+  filter: brightness(0.2);
   opacity: 0.2;
 }
 #work-thumbs a:hover {
-  filter: blur(0);
+  filter: brightness(1);
   opacity: 1;
 }
 #project-meta {
@@ -340,6 +374,9 @@ body#photography #highlight {
   }
   #nav-toggle {
     display: block;
+  }
+  #intro {
+    flex-direction: column;
   }
   #main-footer * {
     text-align: center;
