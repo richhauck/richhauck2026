@@ -9,6 +9,16 @@ export default function Footer() {
         <grid-col span="6">
           <ul id="social-links">
             <li>
+              <a href="https://instagram.com/mandalatv" target="_blank">
+                <img src="/images/instagram.svg" alt="Instagram" />
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/richhauck" target="_blank">
+                <img src="/images/github.svg" alt="Github" />
+              </a>
+            </li>
+            <li>
               <a href="https://www.linkedin.com/in/richhauck/" target="_blank">
                 <img src="/images/linkedin.svg" alt="LinkedIn" />
               </a>

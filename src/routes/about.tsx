@@ -29,19 +29,46 @@ function About() {
               }}
             >
               <p>
-                I've always been fascinated with the intersection of design and
-                technology, starting from my college days working in Macromedia
-                Director and Flash (does that make me old?), to designing
-                screensavers and games , to playing with Processing at my
-                graduate program (NYU's ITP), up to the JavaScript frameworks I
-                work with daily today. I'm currently a lead software engineer
-                with Oliver Wyman, an instructor of interactive media and
-                photography at Harrisburg Area Community College, and on the
-                side still humbly run Hauck Interactive, Inc. where my niche has
-                been WordPress custom theme design and development for small and
-                medium businesses. The latter has also afforded me to be an
-                award-winning illustrator for The Burg and for some fairly
-                popular hot sauces.
+                I started my career as a web designer completing interface
+                designs, illustration work, and simple web-based games and
+                screensavers. I was attracted to programming in the early 2000s
+                through Flash/ActionScript and programmatic art in
+                <a href="https://processing.org/" target="_blank">
+                  Processing
+                </a>
+                . I've transitioned that interest to standards-based languages,
+                and am always focusing on technology through the lens of the
+                user.
+              </p>
+              <p>
+                I'm currently a lead software engineer with Oliver Wyman, where
+                I prototype web applications. I previously held roles with
+                Deloitte and the NYSE.
+              </p>
+
+              <p>
+                Prior to that, I operated through
+                <a href="https://www.hauckinteractive.com">
+                  Hauck Interactive, Inc.
+                </a>
+                helping small and medium businesses with design. I still work
+                under this for the occasional small project, as well as for
+                award-winning illustrations with{" "}
+                <a href="https://theburgnews.com/">The Burg</a> and some popular{" "}
+                <a href="https://www.torchbearersauces.com/">hot sauces</a>.
+              </p>
+
+              <p>
+                My teaching career stemmed from wanting to give students an
+                education in web design that more closely aligned with the
+                industry--something I didn't experience in my first web design
+                class. I've since taught for over 20 years.
+              </p>
+
+              <p>
+                I currently reside in Harrisburg, Pennsylvania with my wife and
+                three boys. I play pickup ultimate whenever I can, and practice
+                Judo and Jujitsu.
               </p>
             </div>
           </grid-col>

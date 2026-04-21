@@ -228,6 +228,13 @@ body#photography #highlight {
     transform: translateY(0);
   }
 }
+
+#intro {
+  a {
+    color: var(--color-accent);
+  }
+}
+
 /* LightGallery */
 .lg-react-element:hover a {
   filter: brightness(0.2);
