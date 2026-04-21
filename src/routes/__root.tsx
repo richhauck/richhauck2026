@@ -12,6 +12,13 @@ export const Route = createRootRoute({
 });
 
 function RootComponent() {
+  const { setIsMobile } = useMobileStore();
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth > 767);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div id="top-gradient">
       <grid-container size="lg">
