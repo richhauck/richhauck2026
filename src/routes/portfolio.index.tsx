@@ -56,7 +56,7 @@ function RouteComponent() {
               : "repeat(3, minmax(0, 1fr))",
             paddingLeft: isMobile ? "1.25rem" : "0",
             paddingRight: isMobile ? "1.25rem" : "0",
-            gap: "0.5rem",
+            gap: "1rem",
           }}
         >
           {projects.map((project: Project, index: number) => (
