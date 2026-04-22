@@ -27,7 +27,7 @@ const MediaThumb: FC<MediaThumbProps> = ({ props, index = 0 }) => {
   return (
     <a
       className="thumb"
-      href={props.src}
+      href="#"
       data-src={props.src}
       data-slide-name={permalink}
       data-sub-html={`<h3>${props.title}</h3><p>${props.caption}</p>`}

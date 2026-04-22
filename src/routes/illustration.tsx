@@ -49,8 +49,10 @@ function RouteComponent() {
     <section id="illustration">
       <title>{`Illustration - ${SITE_TITLE}`}</title>
       <LightGallery
+        key={illustrations.length}
         licenseKey={VITE_LIGHTGALLERY_LICENSE_KEY}
         speed={500}
+        hideScrollbar={true}
         download={false}
         selector=".thumb"
       >
