@@ -1,11 +1,17 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 
 export const Route = createFileRoute("/")({ component: App });
 
 function App() {
   const rolesRef = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const id = requestAnimationFrame(() => setVisible(true));
+    return () => cancelAnimationFrame(id);
+  }, []);
 
   useEffect(() => {
     const el = rolesRef.current;
@@ -32,7 +38,14 @@ function App() {
 
   return (
     <section>
-      <div id="intro">
+      <div
+        id="intro"
+        className="element-fade"
+        style={{
+          opacity: visible ? 1 : 0,
+          transform: visible ? "translateY(0)" : "translateY(1rem)",
+        }}
+      >
         <div style={{ textAlign: "center" }}>
           <img
             src="images/rich-hauck.avif"
@@ -40,7 +53,15 @@ function App() {
             style={{ borderRadius: "50%", maxWidth: "25rem", margin: "0 auto" }}
           />
         </div>
-        <div id="intro-text">
+        <div
+          id="intro-text"
+          className="element-fade"
+          style={{
+            opacity: visible ? 1 : 0,
+            transform: visible ? "translateY(0)" : "translateY(1rem)",
+            transitionDelay: "0.3s",
+          }}
+        >
           <div>
             <h1 style={{ fontSize: "300%", lineHeight: "100%" }}>
               Hi! I'm a{" "}

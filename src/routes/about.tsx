@@ -21,7 +21,7 @@ function About() {
         <grid-row style={{ alignItems: "stretch" }}>
           <grid-col span="8" style={{ display: "flex" }}>
             <div
-              className="box about-fade"
+              className="box element-fade"
               style={{
                 opacity: visible ? 1 : 0,
                 transform: visible ? "translateY(0)" : "translateY(1rem)",
@@ -77,7 +77,7 @@ function About() {
             <img
               src="images/rich-hauck.webp"
               alt="Rich Hauck"
-              className="about-fade border"
+              className="element-fade border"
               style={{
                 width: "100%",
                 objectFit: "cover",
