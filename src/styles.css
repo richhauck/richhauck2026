@@ -262,6 +262,13 @@ body#photography #highlight {
 #intro-text {
   display: flex;
   align-items: center;
+  a {
+    color: var(--color-accent);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 section {

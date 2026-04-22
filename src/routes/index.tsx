@@ -52,10 +52,10 @@ function App() {
               </div>
             </h1>
             <p>
-              I've enjoyed wearing a few hats in a career that's spanned over
-              over 25 years. My work has taken me from agency work, to Wall
-              Street, and then to consulting, all while keeping a foot in the
-              classroom to give back. <Link to="/about">More...</Link>
+              I've worn a few hats in a career that's spanned over over 25
+              years. My work has taken me from agency work to Wall Street and
+              then to consulting, all while keeping a foot in the classroom to
+              give back. <Link to="/about">More...</Link>
             </p>
           </div>
         </div>
