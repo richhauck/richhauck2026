@@ -15,6 +15,7 @@ const WorkThumb: FC<MediaThumbProps> = ({ props, index = 0 }) => {
         animationDelay: `${index * 0.2}s`,
         color: `var(--color-text)`,
         textDecoration: "none",
+        margin: "0 auto",
       }}
     >
       <figure>
