@@ -9,6 +9,7 @@ import LightGallery from "lightgallery/react";
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
+import LoadingSpinner from "#/components/LoadingSpinner";
 const { VITE_LIGHTGALLERY_LICENSE_KEY } = import.meta.env;
 
 export const Route = createFileRoute("/photography")({
@@ -38,7 +39,7 @@ function RouteComponent() {
   }, [data]);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <LoadingSpinner />;
   }
 
   if (error) {

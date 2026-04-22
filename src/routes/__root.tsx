@@ -14,7 +14,7 @@ export const Route = createRootRoute({
 function RootComponent() {
   const { setIsMobile } = useMobileStore();
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth > 767);
+    const handleResize = () => setIsMobile(window.innerWidth < 767);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);

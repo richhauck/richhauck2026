@@ -1,3 +1,4 @@
+import LoadingSpinner from "#/components/LoadingSpinner";
 import WorkThumb from "#/components/WorkThumb";
 import { SITE_TITLE } from "#/constants";
 import { useProjects } from "#/hooks/useProjects";
@@ -29,7 +30,7 @@ function RouteComponent() {
   }, [data]);
 
   if (isLoading) {
-    return <div>Loading Project...</div>;
+    return <LoadingSpinner />;
   }
 
   if (error) {

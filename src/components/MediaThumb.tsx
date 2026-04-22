@@ -22,7 +22,7 @@ const MediaThumb: FC<MediaThumbProps> = ({ props, index = 0 }) => {
     } else {
       setThumbWidth(initialWidth);
     }
-  }, [initialWidth]);
+  }, [isMobile]);
 
   return (
     <a

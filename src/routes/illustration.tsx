@@ -9,6 +9,7 @@ import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
 import useIllustrationsStore from "#/stores/useIllustrationsStore";
 import MediaThumb from "#/components/MediaThumb";
+import LoadingSpinner from "#/components/LoadingSpinner";
 const { VITE_LIGHTGALLERY_LICENSE_KEY } = import.meta.env;
 
 export const Route = createFileRoute("/illustration")({
@@ -38,7 +39,7 @@ function RouteComponent() {
   }, [data]);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <LoadingSpinner />;
   }
 
   if (error) {
@@ -54,7 +55,11 @@ function RouteComponent() {
         selector=".thumb"
       >
         {illustrations.map((illustration: MediaItem, index: number) => (
-          <MediaThumb key={illustration.id} props={illustration} index={index} />
+          <MediaThumb
+            key={illustration.id}
+            props={illustration}
+            index={index}
+          />
         ))}
       </LightGallery>
     </section>
