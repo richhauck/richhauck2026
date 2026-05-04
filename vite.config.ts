@@ -5,6 +5,9 @@ import { tanstackRouter } from "@tanstack/router-plugin/vite";
 import viteReact from "@vitejs/plugin-react";
 
 const config = defineConfig({
+  define: {
+    __BUILD_DATE__: JSON.stringify(new Date().toISOString()), // ISO format
+  },
   plugins: [
     devtools(),
     tsconfigPaths({ projects: ["./tsconfig.json"] }),

@@ -71,6 +71,10 @@ function About() {
                 three boys. I play pickup ultimate whenever I can, and practice
                 Judo and Jujitsu.
               </p>
+              <p>
+                Check out my <a href="/now">Now</a> page to read up on what I'm
+                currently doing.
+              </p>
             </div>
           </grid-col>
           <grid-col span="4" style={{ display: "flex" }}>

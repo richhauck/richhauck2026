@@ -17,6 +17,7 @@
     "@tanstack/react-router": "latest",
     "@tanstack/react-router-devtools": "latest",
     "@tanstack/router-plugin": "^1.132.0",
+    "dayjs": "^1.11.20",
     "gsap": "^3.15.0",
     "hamburgers": "^1.2.1",
     "isotope-layout": "^3.0.6",

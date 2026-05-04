@@ -1,0 +1,12 @@
+{
+  "name": "1812 Strategies",
+  "description": "Created logo and website for 1812 Strategies, a political consulting firm based in Harrisburg, Pa",
+  "project": "1812 Strategies",
+  "client": "1812 Strategies",
+  "categories": ["design", "development"],
+  "url": "http://www.1812strategies.com",
+  "images": [
+    "/projects/1812-strategies/home.avif",
+    "/projects/1812-strategies/our-services.avif"
+  ]
+}

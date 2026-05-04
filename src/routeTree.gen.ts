@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as PhotographyRouteImport } from './routes/photography'
+import { Route as NowRouteImport } from './routes/now'
 import { Route as IllustrationRouteImport } from './routes/illustration'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
@@ -19,6 +20,11 @@ import { Route as PortfolioProjectIdRouteImport } from './routes/portfolio.$proj
 const PhotographyRoute = PhotographyRouteImport.update({
   id: '/photography',
   path: '/photography',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NowRoute = NowRouteImport.update({
+  id: '/now',
+  path: '/now',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IllustrationRoute = IllustrationRouteImport.update({
@@ -51,6 +57,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/illustration': typeof IllustrationRoute
+  '/now': typeof NowRoute
   '/photography': typeof PhotographyRoute
   '/portfolio/$projectId': typeof PortfolioProjectIdRoute
   '/portfolio/': typeof PortfolioIndexRoute
@@ -59,6 +66,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/illustration': typeof IllustrationRoute
+  '/now': typeof NowRoute
   '/photography': typeof PhotographyRoute
   '/portfolio/$projectId': typeof PortfolioProjectIdRoute
   '/portfolio': typeof PortfolioIndexRoute
@@ -68,6 +76,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/illustration': typeof IllustrationRoute
+  '/now': typeof NowRoute
   '/photography': typeof PhotographyRoute
   '/portfolio/$projectId': typeof PortfolioProjectIdRoute
   '/portfolio/': typeof PortfolioIndexRoute
@@ -78,6 +87,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/illustration'
+    | '/now'
     | '/photography'
     | '/portfolio/$projectId'
     | '/portfolio/'
@@ -86,6 +96,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/illustration'
+    | '/now'
     | '/photography'
     | '/portfolio/$projectId'
     | '/portfolio'
@@ -94,6 +105,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/illustration'
+    | '/now'
     | '/photography'
     | '/portfolio/$projectId'
     | '/portfolio/'
@@ -103,6 +115,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   IllustrationRoute: typeof IllustrationRoute
+  NowRoute: typeof NowRoute
   PhotographyRoute: typeof PhotographyRoute
   PortfolioProjectIdRoute: typeof PortfolioProjectIdRoute
   PortfolioIndexRoute: typeof PortfolioIndexRoute
@@ -115,6 +128,13 @@ declare module '@tanstack/react-router' {
       path: '/photography'
       fullPath: '/photography'
       preLoaderRoute: typeof PhotographyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/now': {
+      id: '/now'
+      path: '/now'
+      fullPath: '/now'
+      preLoaderRoute: typeof NowRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/illustration': {
@@ -159,6 +179,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   IllustrationRoute: IllustrationRoute,
+  NowRoute: NowRoute,
   PhotographyRoute: PhotographyRoute,
   PortfolioProjectIdRoute: PortfolioProjectIdRoute,
   PortfolioIndexRoute: PortfolioIndexRoute,
