@@ -219,18 +219,22 @@ body #highlight {
 }
 body#about #highlight {
   width: 54px;
-  right: 462px;
+  right: 539px;
 }
 body#portfolio #highlight {
   width: 87px;
-  right: 325px;
+  right: 402px;
 }
 body#illustration #highlight {
   width: 108px;
-  right: 166px;
+  right: 244px;
 }
 body#photography #highlight {
   width: 117px;
+  right: 78px;
+}
+body#art #highlight {
+  width: 31px;
   right: 0;
 }
 .text-left {

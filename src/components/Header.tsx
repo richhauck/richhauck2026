@@ -79,6 +79,15 @@ export default function Header() {
                     Photography
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    to="/art"
+                    className="nav-link"
+                    activeProps={{ className: "nav-link is-active" }}
+                  >
+                    Art
+                  </Link>
+                </li>
               </ul>
               <div id="highlight"></div>
             </div>
