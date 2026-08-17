@@ -170,6 +170,26 @@ function About() {
               </div>
 
               <hr />
+              <h2>Education</h2>
+              <div className="box">
+                <ul>
+                  <li>
+                    <strong>New York University</strong> - Master of
+                    Professional Studies, Interactive Telecommunications
+                  </li>
+                  <li>
+                    <strong>Pennsylvania State University</strong> - Bachelor of
+                    Humanities, Communications
+                  </li>
+                  <li>
+                    <strong>Harrisburg Area Community College</strong> -
+                    Associate of Art, Graphic Design
+                  </li>
+                </ul>
+              </div>
+
+              <hr />
+              <h2>Education</h2>
               <grid-container style={{ margin: "0 auto", padding: "0" }}>
                 <grid-row style={{ alignItems: "stretch" }}>
                   <grid-col span="6" style={{ display: "flex" }}>
