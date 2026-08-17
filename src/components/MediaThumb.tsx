@@ -39,7 +39,6 @@ const MediaThumb: FC<MediaThumbProps> = ({ props, index = 0 }) => {
         backgroundPosition: "center",
         width: `${thumbWidth}`,
         height: "350px",
-        margin: "0 5px 5px 0",
         flex: "1 0 auto",
         display: "flex",
       }}

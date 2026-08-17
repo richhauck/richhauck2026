@@ -54,7 +54,7 @@ function RouteComponent() {
             and Me"
           </li>
           <li>
-            Watching <em>Daredevil: Born Again</em> and <em>The Boys</em>
+            Watching <em>The Pitt</em>.
           </li>
           <li>
             Working on throwing an{" "}

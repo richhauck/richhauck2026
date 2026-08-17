@@ -81,49 +81,6 @@ function App() {
           </div>
         </div>
       </div>
-      {/*<grid-container
-        style={{
-          maxWidth: "1200px",
-          minHeight: "400px",
-          padding: "5rem",
-          margin: "0 auto",
-        }}
-      >
-        <grid-row>
-          <grid-col span="5">
-            <img
-              src="images/rich-hauck.avif"
-              alt="Rich Hauck"
-              style={{ borderRadius: "50%", maxWidth: "25rem" }}
-            />
-          </grid-col>
-          <grid-col span="7">
-            <div
-              id="intro"
-              style={{ display: "flex", alignItems: "center", height: "100%" }}
-            >
-              <div style={{ maxWidth: "650px" }}>
-                <h1 style={{ fontSize: "300%", lineHeight: "100%" }}>
-                  Hi! I'm a{" "}
-                  <div id="animated-roles" ref={rolesRef}>
-                    <span>designer.</span>
-                    <span>developer.</span>
-                    <span>photographer.</span>
-                    <span>teacher.</span>
-                  </div>
-                </h1>
-                <p>
-                  I've enjoyed wearing a few hats in a career that's spanned
-                  over over 25 years. My work has taken me from agency work, to
-                  Wall Street, and then to consulting, all while keeping a foot
-                  in the classroom to give back.{" "}
-                  <Link to="/about">More...</Link>
-                </p>
-              </div>
-            </div>
-          </grid-col>
-        </grid-row>
-      </grid-container>*/}
     </section>
   );
 }

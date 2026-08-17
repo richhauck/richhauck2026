@@ -62,7 +62,7 @@ figure {
   left: 0;
   width: 100%;
   min-height: 100%;
-  background: linear-gradient(180deg, var(--black), transparent);
+  background: linear-gradient(180deg, var(--black) 0%, transparent 500px);
   display: flex;
   flex-direction: column;
 }
@@ -131,6 +131,17 @@ img.border {
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 2rem;
 }
+
+.content-box {
+  width: 100%;
+  margin-bottom: 1rem;
+  transition-delay: 0.3s;
+}
+.content-box-inner {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
 #animated-roles {
   color: var(--color-primary);
   display: inline;
@@ -281,7 +292,6 @@ body#photography #highlight {
 
 section {
   min-height: var(--min-height);
-  display: flex;
   align-items: center;
 }
 
