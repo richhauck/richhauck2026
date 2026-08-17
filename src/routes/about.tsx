@@ -21,13 +21,7 @@ function About() {
       period: "August 2021 - Present",
       location: "New York, NY",
       description:
-        "Leading front-end design and development of an internal generative AI platform used by thousands of consultants firm-wide. Architected the UI for a tool that orchestrates multiple LLMs, integrates with SharePoint, and includes a visual DAG editor for prompt chaining. Managing a team of front-end engineers.",
-      highlights: [
-        "Led front-end architecture for AI platform with thousands of users",
-        "Integrated multiple LLMs with SharePoint",
-        "Built custom visual DAG editor for prompt chaining",
-        "Managed front-end engineering team",
-      ],
+        "Led front-end design and development of an internal generative AI platform used by thousands of consultants firm-wide. Architected the UI for a tool that orchestrates multiple LLMs, integrates with SharePoint, and includes a visual DAG editor for prompt chaining. Managed a team of front-end engineers.",
     },
     {
       company: "Hauck Interactive",
@@ -36,11 +30,6 @@ function About() {
       location: "Harrisburg, PA",
       description:
         "Interactive design, development, and branding for small businesses and agencies. Worked with clients including Fitbit, Showtime Networks, Verizon, and NYU.",
-      highlights: [
-        "Built digital experiences for Fortune 500 companies",
-        "Expertise in WordPress, React, Vue, Jekyll",
-        "Full-stack development and brand strategy",
-      ],
     },
     {
       company: "HACC (Harrisburg Area Community College)",
@@ -49,11 +38,6 @@ function About() {
       location: "Harrisburg, PA",
       description:
         "Teach interactive media and design. Serving on the graphic and interactive design program's advisory board.",
-      highlights: [
-        "Teaching digital design and interactive media",
-        "Mentoring next generation of designers",
-        "Shaping curriculum as advisory board member",
-      ],
     },
     {
       company: "Deloitte",
@@ -62,11 +46,6 @@ function About() {
       location: "Mechanicsburg, PA",
       description:
         "Built D3 and ArcGIS visualizations on a React-based CMS backed by PostgreSQL for a federal government client.",
-      highlights: [
-        "Created complex data visualizations",
-        "Led team developing Vue.js projects",
-        "Owned architecture decisions",
-      ],
     },
     {
       company: "New York Stock Exchange",
@@ -75,11 +54,6 @@ function About() {
       location: "New York, NY",
       description:
         "Assisted in the acquisition of the startup Radiate, helped architect ICE/NYSE's Insights portal and developed a custom video player. Supplied design/development to other Intercontinental Exchange sites including Bakkt.",
-      highlights: [
-        "Created complex data visualizations",
-        "Led team developing Vue.js projects",
-        "Owned architecture decisions",
-      ],
     },
   ];
 
