@@ -6,7 +6,28 @@ export const Route = createFileRoute("/")({ component: App });
 
 function App() {
   const rolesRef = useRef<HTMLDivElement>(null);
+  const imageRef = useRef<HTMLImageElement>(null);
   const [visible, setVisible] = useState(false);
+  const images = [
+    "rich-hauck.avif",
+    "developer.avif",
+    "photographer.avif",
+    "teacher.avif",
+  ];
+  const [currentImage, setCurrentImage] = useState(images[0]);
+
+  const updateImage = (nextImage: string) => {
+    const imgEl = imageRef.current;
+    if (!imgEl) return;
+
+    gsap.set(imgEl, { visibility: "hidden", opacity: 0 });
+    setCurrentImage(nextImage);
+
+    requestAnimationFrame(() => {
+      gsap.set(imgEl, { visibility: "visible" });
+      gsap.to(imgEl, { opacity: 1, duration: 0.5, ease: "power1.inOut" });
+    });
+  };
 
   useEffect(() => {
     const id = requestAnimationFrame(() => setVisible(true));
@@ -15,20 +36,27 @@ function App() {
 
   useEffect(() => {
     const el = rolesRef.current;
-    if (!el) return;
+    const imgEl = imageRef.current;
+    if (!el || !imgEl) return;
+
     const spans = Array.from(el.querySelectorAll("span"));
     const total = spans.length;
 
     gsap.set(spans, { display: "none", opacity: 0 });
     gsap.set(spans[0], { display: "inline", opacity: 1 });
+    gsap.set(imgEl, { opacity: 1, visibility: "visible" });
 
     const tl = gsap.timeline({ repeat: -1 });
     spans.forEach((span, i) => {
-      const next = spans[(i + 1) % total];
-      tl.to(span, { opacity: 0, duration: 0.5, delay: 3 })
+      const nextRole = spans[(i + 1) % total];
+      const nextImage = images[(i + 1) % images.length];
+
+      tl.to(span, { opacity: 0, duration: 0.5, delay: 5 })
         .set(span, { display: "none" })
-        .set(next, { display: "inline" })
-        .to(next, { opacity: 1, duration: 0.5 });
+        .to(imgEl, { opacity: 0, duration: 0.35, ease: "power1.inOut" })
+        .call(() => updateImage(nextImage))
+        .set(nextRole, { display: "inline" })
+        .to(nextRole, { opacity: 1, duration: 0.5 });
     });
 
     return () => {
@@ -37,7 +65,15 @@ function App() {
   }, []);
 
   return (
-    <section>
+    <section
+      id="home"
+      className="element-fade"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+      }}
+    >
       <div
         id="intro"
         className="element-fade"
@@ -46,11 +82,23 @@ function App() {
           transform: visible ? "translateY(0)" : "translateY(1rem)",
         }}
       >
-        <div style={{ textAlign: "center" }}>
+        <div
+          style={{
+            textAlign: "center",
+            borderRadius: "50%",
+            backgroundColor: "#000",
+          }}
+        >
           <img
-            src="images/rich-hauck.avif"
+            ref={imageRef}
+            src={`images/${currentImage}`}
             alt="Rich Hauck"
-            style={{ borderRadius: "50%", maxWidth: "25rem", margin: "0 auto" }}
+            style={{
+              borderRadius: "50%",
+              maxWidth: "25rem",
+              margin: "0 auto",
+              display: "block",
+            }}
           />
         </div>
         <div
