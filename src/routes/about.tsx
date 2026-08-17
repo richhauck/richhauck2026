@@ -220,7 +220,7 @@ function About() {
             </div>
           </grid-col>
           <grid-col span="4" style={{ display: "flex" }}>
-            <div>
+            <div style={{ width: "100%" }}>
               <img
                 src="images/rich-hauck.webp"
                 alt="Rich Hauck"
